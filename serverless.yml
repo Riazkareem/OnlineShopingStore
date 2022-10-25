@@ -144,6 +144,12 @@ functions:
     - http:
         path: /product/{id}
         method: delete 
+  searchProduct:
+    handler: Products/addProducts.searchProduct
+    events:
+    - http:
+        path: /searchproduct/{name}
+        method: get      
   addCategories:
     handler: Categories/categories.addCategories
     events:
@@ -251,8 +257,8 @@ functions:
     events:
     - http:
         path: /deleteorder/{id}
-        method: delete 
-                     
+        method: delete   
+                      
 resources:
   Resources:
     OnlineStoreImages:
