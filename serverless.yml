@@ -1,0 +1,326 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: onlinestore
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: '3'
+
+custom:
+  settings:
+    USER_TABLE: OnlineStoreUsers
+    PRODUCTS_TABLE: OnlineStoreProducts
+    CATEGORIES_TABLE: OnlineStoreCategories
+    TAGS_TABLE: OnlineStoreTags
+    ORDER_TABLE: OnlineStoreOrder
+    IMAGES_BUCKET: onlinestoreimages
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
+  environment: ${self:custom.settings}
+  iamRoleStatements:
+   - Effect: "Allow"
+     Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - "s3:Put*"
+     Resource:
+      - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.USER_TABLE}"
+      - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.PRODUCTS_TABLE}"
+      - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.CATEGORIES_TABLE}"
+      - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.TAGS_TABLE}"
+      - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.ORDER_TABLE}"
+      - "arn:aws:s3:::${self:custom.settings.IMAGES_BUCKET}/*" 
+
+functions:
+  createUser:
+    handler: Users/users.createUser
+    events:
+    - http:
+        path: /user
+        method: post
+  getAllUsers:
+    handler: Users/users.getAllUsers
+    events:
+    - http:
+        path: /users
+        method: get
+  getUsers:
+    handler: Users/users.getUsers
+    events:
+    - http:
+        path: /users/{number}
+        method: get
+  getUser:
+    handler: Users/users.getUser
+    events:
+    - http:
+        path: /user/{id}
+        method: get
+  updateUser:
+    handler: Users/users.updateUser
+    events:
+    - http:
+        path: /user/{id}
+        method: put
+  deleteUser:
+    handler: Users/users.deleteUser
+    events:
+    - http:
+        path: /user/{id}
+        method: delete
+  s3FileUploader:
+    handler: Products/products.uploadfile  
+    events:
+      - http:
+          path: file
+          method: POST
+  csvUploader:
+    handler: Products/uploadcsv.uploadcsv
+    events:
+      - http:
+          path: uploadcsv
+          method: POST
+  csvToDynamodb:
+    handler: Products/csvtodynamodb.csvtodynamodb
+    events:
+      - http:
+          path: csvtodynamodb
+          method: POST   
+  addProducts:
+    handler: Products/addProducts.addProducts
+    events:
+      - http:
+          path: addProducts
+          method: POST       
+  getAllProducts:
+    handler: Products/addProducts.getAllProducts
+    events:
+    - http:
+        path: /getAllProducts
+        method: get
+  getProducts:
+    handler: Products/addProducts.getProducts
+    events:
+    - http:
+        path: /products/{number}
+        method: get
+  getProduct:
+    handler: Products/addProducts.getProduct
+    events:
+    - http:
+        path: /product/{id}
+        method: get
+  updateProduct:
+    handler: Products/addProducts.updateProduct
+    events:
+    - http:
+        path: /product/{id}
+        method: put
+  deleteProduct:
+    handler: Products/addProducts.deleteProduct
+    events:
+    - http:
+        path: /product/{id}
+        method: delete 
+  addCategories:
+    handler: Categories/categories.addCategories
+    events:
+      - http:
+          path: /addCategories
+          method: POST       
+  allCategories:
+    handler: Categories/categories.allCategories
+    events:
+    - http:
+        path: /allCategories
+        method: get
+  getCategories:
+    handler: Categories/categories.getCategories
+    events:
+    - http:
+        path: /categories/{number}
+        method: get
+  getCategory:
+    handler: Categories/categories.getCategory
+    events:
+    - http:
+        path: /category/{id}
+        method: get
+  updateCategories:
+    handler: Categories/categories.updateCategories
+    events:
+    - http:
+        path: /updatecategories/{id}
+        method: put
+  deleteCategories:
+    handler: Categories/categories.deleteCategories
+    events:
+    - http:
+        path: /deletecategory/{id}
+        method: delete 
+  addTags:
+    handler: Tags/tags.addTags
+    events:
+      - http:
+          path: /addTags
+          method: POST       
+  allTags:
+    handler: Tags/tags.allTags
+    events:
+    - http:
+        path: /allTags
+        method: get
+  getTags:
+    handler: Tags/tags.getTags
+    events:
+    - http:
+        path: /tags/{number}
+        method: get
+  getTag:
+    handler: Tags/tags.getTag
+    events:
+    - http:
+        path: /tag/{id}
+        method: get
+  updateTags:
+    handler: Tags/tags.updateTags
+    events:
+    - http:
+        path: /updatetags/{id}
+        method: put
+  deleteTag:
+    handler: Tags/tags.deleteTag
+    events:
+    - http:
+        path: /deletetag/{id}
+        method: delete  
+  addOrder:
+    handler: Order/order.addOrder
+    events:
+      - http:
+          path: /addOrder
+          method: POST       
+  allOrders:
+    handler: Order/order.allOrders
+    events:
+    - http:
+        path: /allorders
+        method: get
+  getOrders:
+    handler: Order/order.getOrders
+    events:
+    - http:
+        path: /orders/{number}
+        method: get
+  getSingleOrder:
+    handler: Order/order.getSingleOrder
+    events:
+    - http:
+        path: /getSingleOrder/{id}
+        method: get
+  updateOrder:
+    handler: Order/order.updateOrder
+    events:
+    - http:
+        path: /updateorder/{id}
+        method: put
+  deleteOrder:
+    handler: Order/order.deleteOrder
+    events:
+    - http:
+        path: /deleteorder/{id}
+        method: delete 
+                     
+resources:
+  Resources:
+    OnlineStoreImages:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName:  ${self:custom.settings.IMAGES_BUCKET}
+    PostsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+        - AttributeName: "id"
+          AttributeType: "S"
+        KeySchema:
+        - AttributeName: "id"
+          KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:custom.settings.USER_TABLE}
+    ProductsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+        - AttributeName: "id"
+          AttributeType: "S"
+        KeySchema:
+        - AttributeName: "id"
+          KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:custom.settings.PRODUCTS_TABLE}    
+    CategoriesTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+        - AttributeName: "id"
+          AttributeType: "S"
+        KeySchema:
+        - AttributeName: "id"
+          KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:custom.settings.CATEGORIES_TABLE}   
+    TagsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+        - AttributeName: "id"
+          AttributeType: "S"
+        KeySchema:
+        - AttributeName: "id"
+          KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:custom.settings.TAGS_TABLE}   
+    OrderTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+        - AttributeName: "id"
+          AttributeType: "S"
+        KeySchema:
+        - AttributeName: "id"
+          KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:custom.settings.ORDER_TABLE}         
