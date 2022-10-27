@@ -146,22 +146,22 @@ module.exports.getAllProducts = (event, context, callback) => {
 
    // search  product
    module.exports.searchProduct = (event, context, callback) => {
-   // const productName = event.pathParameters.name;
-
-    const productName = 'toys';
-
+     try {
+     const productName = event.pathParameters.name;
       var params = {
         TableName: productsTable,
         FilterExpression : "contains(#name, :name)",
         ExpressionAttributeNames: { "#name": "name" },
         ExpressionAttributeValues: {
             ':name':productName
-        }
+        } 
     };
-  
-    db.scan(params, function (err, data) {
-          if (err) console.log(err);
-          else console.log(data);
-      });
+    db.scan(params).promise().then((body) => {
+        if (body) callback(null, response(200, body));
+        else callback(null, response(404, { error: 'Product not found' }));
+    });
+     } catch (err) {
+       callback(null, response(err.statusCode, err));
+     }
 
   };
