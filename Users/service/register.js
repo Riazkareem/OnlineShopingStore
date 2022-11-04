@@ -11,11 +11,10 @@ const dynamodb = new AWS.DynamoDB.DocumentClient();
 const userTable = process.env.USERS_TABLE;
 
 async function register(userInfo) {
-  const name = userInfo.name;
   const email = userInfo.email;
   const username = userInfo.username;
   const password = userInfo.password;
-  if (!username || !name || !email || !password) {
+  if (!username || !email || !password) {
     return util.buildResponse(401, {
       message: "All fields are required",
     });
@@ -31,7 +30,6 @@ async function register(userInfo) {
 
   const encryptedPW = bcrypt.hashSync(password.trim(), 10);
   const user = {
-    name: name,
     email: email,
     id: uuid.v1(),
     createdAt: new Date().toISOString(),

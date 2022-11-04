@@ -103,7 +103,7 @@ functions:
     handler: Users/users.updateUser
     events:
       - http:
-          path: /updateuser/{email}
+          path: /updateuser
           method: put
   deleteUser:
     handler: Users/users.deleteUser
@@ -157,7 +157,7 @@ functions:
     handler: Products/addProducts.updateProduct
     events:
       - http:
-          path: /product/{id}
+          path: /product/
           method: put
   deleteProduct:
     handler: Products/addProducts.deleteProduct
@@ -199,7 +199,7 @@ functions:
     handler: Categories/categories.updateCategories
     events:
       - http:
-          path: /updatecategories/{id}
+          path: /updatecategories
           method: put
   deleteCategories:
     handler: Categories/categories.deleteCategories
@@ -235,7 +235,7 @@ functions:
     handler: Tags/tags.updateTags
     events:
       - http:
-          path: /updatetags/{id}
+          path: /updatetags
           method: put
   deleteTag:
     handler: Tags/tags.deleteTag
@@ -271,7 +271,7 @@ functions:
     handler: Order/order.updateOrder
     events:
       - http:
-          path: /updateorder/{id}
+          path: /updateorder
           method: put
   deleteOrder:
     handler: Order/order.deleteOrder

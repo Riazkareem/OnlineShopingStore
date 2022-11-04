@@ -2,6 +2,7 @@
 const AWS = require("aws-sdk");
 const db = new AWS.DynamoDB.DocumentClient();
 const uuid = require("uuid");
+const bcrypt = require("bcryptjs");
 
 const userTable = process.env.USERS_TABLE;
 // Create a response
@@ -64,29 +65,30 @@ module.exports.getUser = (event, context, callback) => {
     .catch((err) => callback(null, response(err.statusCode, err)));
 };
 // Update a user
-module.exports.updateUser = (
-  event,
-  updateKey,
-  updateValue,
-  context,
-  callback
-) => {
+module.exports.updateUser = (event, context, callback) => {
   const requestBody = JSON.parse(event.body);
   return modifyProduct(
     requestBody.email,
-    requestBody.updateKey,
-    requestBody.updateValue
+    requestBody.username,
+    requestBody.password
   );
 };
-async function modifyProduct(email, updateKey, updateValue) {
+async function modifyProduct(email, username, password) {
+  if (!username || !email || !password) {
+    return buildResponse(401, {
+      message: "All fields are required",
+    });
+  }
+  const encryptedPW = bcrypt.hashSync(password.trim(), 10);
   const params = {
     TableName: userTable,
     Key: {
       email: email,
     },
-    UpdateExpression: `set ${updateKey} = :value`,
+    UpdateExpression: `set username = :u, password = :p`,
     ExpressionAttributeValues: {
-      ":value": updateValue,
+      ":u": username,
+      ":p": encryptedPW,
     },
     ReturnValues: "UPDATED_NEW",
   };
@@ -107,6 +109,7 @@ async function modifyProduct(email, updateKey, updateValue) {
       }
     );
 }
+
 //only Responce for update operation
 function buildResponse(statusCode, body) {
   return {
