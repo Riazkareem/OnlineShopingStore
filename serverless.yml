@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: onlinestore
+service: OnlineStore
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -45,6 +45,7 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
         - "s3:Put*"
+        - "ses:*"
       Resource:
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.USERS_TABLE}"
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.PRODUCTS_TABLE}"
@@ -80,6 +81,18 @@ functions:
       - http:
           path: /verify
           method: post
+  account-recovery:
+    handler: Users/index.handler
+    events:
+      - http:
+          path: /account-recovery
+          method: post
+  ResetPassword:
+    handler: Users/index.handler
+    events:
+      - http:
+          path: /resetpassword
+          method: put
   # User Registeration end
   getAllUsers:
     handler: Users/users.getAllUsers
@@ -111,6 +124,7 @@ functions:
       - http:
           path: /deleteuser/{email}
           method: delete
+  # csv to dynamodb and upload csv to s3 bucket
   s3FileUploader:
     handler: Products/products.uploadfile
     events:
@@ -129,6 +143,7 @@ functions:
       - http:
           path: csvtodynamodb
           method: POST
+    # products
   addProducts:
     handler: Products/addProducts.addProducts
     events:
@@ -171,6 +186,7 @@ functions:
       - http:
           path: /searchproduct/{name}
           method: get
+    # categories
   addCategories:
     handler: Categories/categories.addCategories
     events:
@@ -207,6 +223,7 @@ functions:
       - http:
           path: /deletecategory/{id}
           method: delete
+    # Tags
   addTags:
     handler: Tags/tags.addTags
     events:
@@ -243,6 +260,7 @@ functions:
       - http:
           path: /deletetag/{id}
           method: delete
+    # Order
   addOrder:
     handler: Order/order.addOrder
     events:
@@ -282,10 +300,12 @@ functions:
 
 resources:
   Resources:
+    # onlinestore bucket
     OnlineStoreImages:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:custom.settings.IMAGES_BUCKET}
+    # Product Table
     ProductsTable:
       Type: AWS::DynamoDB::Table
       Properties:
@@ -299,6 +319,7 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:custom.settings.PRODUCTS_TABLE}
+    # Categories Table
     CategoriesTable:
       Type: AWS::DynamoDB::Table
       Properties:
@@ -312,6 +333,7 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:custom.settings.CATEGORIES_TABLE}
+    # Tags Table
     TagsTable:
       Type: AWS::DynamoDB::Table
       Properties:
@@ -325,6 +347,7 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:custom.settings.TAGS_TABLE}
+    # Order Table
     OrderTable:
       Type: AWS::DynamoDB::Table
       Properties:
