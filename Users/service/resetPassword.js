@@ -11,17 +11,25 @@ const userTable = process.env.USERS_TABLE;
 
 async function resetPassword(userInfo) {
   const token = userInfo.token;
-  const email = userInfo.email;
   const password = userInfo.password;
-  if (!email || !password || !token) {
+  if (!password || !token) {
     return util.buildResponse(401, {
       message: "All fields are required",
     });
   }
 
-  const verification = auth.verifyToken(email, token);
+  // const verification = auth.verifyToken(email, token);
+  // if (!verification.verified) {
+  //   return util.buildResponse(401, verification);
+  // }
+
+  const verification = auth.verifyResetToken(token);
   if (!verification.verified) {
     return util.buildResponse(401, verification);
+  }
+  if ((verification.verified = true)) {
+    var email = verification.email;
+    // return util.buildResponse(200, verification);
   }
 
   const saveUserResponse = await updateUser(email, password);

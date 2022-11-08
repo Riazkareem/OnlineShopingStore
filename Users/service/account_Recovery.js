@@ -21,12 +21,12 @@ async function account_Recovery(Info) {
   if (!dynamoUser || !dynamoUser.email) {
     return util.buildResponse(403, { message: "User Email does not exist" });
   }
-  const userInfo = {
+  const resetInfo = {
     email: dynamoUser.email,
   };
-  const token = auth.generateToken(userInfo);
+  const token = auth.generateResetToken(resetInfo);
   const response = {
-    user: userInfo,
+    user: resetInfo,
     token: token,
   };
   // const { to, from, subject, text } = JSON.parse(event.body);
