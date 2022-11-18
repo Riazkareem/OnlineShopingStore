@@ -3,6 +3,7 @@ const loginService = require("./service/login");
 const verifyService = require("./service/verify");
 const account_RecoveryService = require("./service/account_Recovery");
 const resetPasswordService = require("./service/resetPassword");
+const logoutService = require("./service/logout");
 const util = require("./utils/util");
 
 const homePath = "/home";
@@ -11,6 +12,7 @@ const loginPath = "/login";
 const verifyPath = "/verify";
 const account_RecoveryPath = "/account-recovery";
 const resetPasswordPath = "/resetpassword";
+const logoutPath = "/logout";
 
 exports.handler = async (event) => {
   console.log("Request Event: ", event);
@@ -40,6 +42,10 @@ exports.handler = async (event) => {
     case event.httpMethod === "PUT" && event.path === resetPasswordPath:
       const resetPasswordBody = JSON.parse(event.body);
       response = await resetPasswordService.resetPassword(resetPasswordBody);
+      break;
+    case event.httpMethod === "POST" && event.path === logoutPath:
+      const logoutBody = JSON.parse(event.body);
+      response = await logoutService.logout(logoutBody);
       break;
     default:
       response = util.buildResponse(404, "404 Not Found");

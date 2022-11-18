@@ -58,7 +58,28 @@ function verifyResetToken(token) {
     };
   });
 }
+
+// verify logout token
+function verifyLogoutToken(token) {
+  return jwt.verify(token, process.env.JWT_SECRET, (error, response) => {
+    if (error) {
+      return {
+        verified: false,
+        message: "invalid token logout",
+      };
+    }
+    return {
+      email: response.email,
+      exp: response.exp,
+      iat: response.iat,
+      verified: true,
+      message: "verifed logout",
+    };
+  });
+}
+
 module.exports.generateToken = generateToken;
 module.exports.generateResetToken = generateResetToken;
 module.exports.verifyToken = verifyToken;
 module.exports.verifyResetToken = verifyResetToken;
+module.exports.verifyLogoutToken = verifyLogoutToken;

@@ -93,6 +93,12 @@ functions:
       - http:
           path: /resetpassword
           method: put
+  Logout:
+    handler: Users/index.handler
+    events:
+      - http:
+          path: /logout
+          method: post
   # User Registeration end
   getAllUsers:
     handler: Users/users.getAllUsers
