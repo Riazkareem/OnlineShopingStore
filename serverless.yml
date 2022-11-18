@@ -297,6 +297,13 @@ functions:
       - http:
           path: /deleteorder/{id}
           method: delete
+    # Payment Method Api
+  paymentMethod:
+    handler: paymentMethod/index.handler
+    events:
+      - http:
+          path: /paymentMethod
+          method: post
 
 resources:
   Resources:
