@@ -2,7 +2,7 @@ const AWS = require("aws-sdk");
 const s3 = new AWS.S3();
 
 // bucket name env var will be set in serverless.yml file
-const BUCKET_NAME = "onlinestoreimages";
+const BUCKET_NAME = process.env.ONLINESTORE_CSV;
 
 module.exports.uploadcsv = async (event) => {
   console.log(event);

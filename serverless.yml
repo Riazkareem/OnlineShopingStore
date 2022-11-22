@@ -28,6 +28,7 @@ custom:
     TAGS_TABLE: OnlineStoreTags
     ORDER_TABLE: OnlineStoreOrder
     IMAGES_BUCKET: onlinestoreimages
+    ONLINESTORE_CSV: onlinestorecsv
     JWT_SECRET: OnlineStoreUser
 
 provider:
@@ -53,6 +54,7 @@ provider:
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.TAGS_TABLE}"
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.ORDER_TABLE}"
         - "arn:aws:s3:::${self:custom.settings.IMAGES_BUCKET}/*"
+        - "arn:aws:s3:::${self:custom.settings.ONLINESTORE_CSV}/*"
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.JWT_SECRET}"
 
 functions:
@@ -149,6 +151,31 @@ functions:
       - http:
           path: csvtodynamodb
           method: POST
+  # CSV Buckets
+  uploadCSV:
+    handler: Buckets/uploadcsv.uploadcsv
+    events:
+      - http:
+          path: uploadcsv
+          method: POST
+  listcsv:
+    handler: Buckets/listcsv.listcsv
+    events:
+      - http:
+          path: listcsv
+          method: GET
+  deletecsv:
+    handler: Buckets/deletecsv.deletecsv
+    events:
+      - http:
+          path: deletecsv/name
+          method: DELETE
+  searchcsv:
+    handler: Buckets/searchcsv.searchcsv
+    events:
+      - http:
+          path: /searchcsv/{name}
+          method: GET
     # products
   addProducts:
     handler: Products/addProducts.addProducts
@@ -318,6 +345,11 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:custom.settings.IMAGES_BUCKET}
+    # CSV bucket
+    OnlineStoreCSV:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.settings.ONLINESTORE_CSV}
     # Product Table
     ProductsTable:
       Type: AWS::DynamoDB::Table
