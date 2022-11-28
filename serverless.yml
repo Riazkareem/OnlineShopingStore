@@ -45,7 +45,10 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
-        - "s3:Put*"
+        - "s3:PutObject*"
+        - "s3:GetObject*"
+        - "s3:ListBucket*"
+        - "s3:DeleteObject*"
         - "ses:*"
       Resource:
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.USERS_TABLE}"
@@ -56,6 +59,7 @@ provider:
         - "arn:aws:s3:::${self:custom.settings.IMAGES_BUCKET}/*"
         - "arn:aws:s3:::${self:custom.settings.ONLINESTORE_CSV}/*"
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.JWT_SECRET}"
+        - "*"
 
 functions:
   # User Registration Start
@@ -168,7 +172,7 @@ functions:
     handler: Buckets/deletecsv.deletecsv
     events:
       - http:
-          path: deletecsv/name
+          path: deletecsv/{filename}
           method: DELETE
   searchcsv:
     handler: Buckets/searchcsv.searchcsv

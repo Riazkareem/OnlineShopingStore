@@ -19,15 +19,12 @@ async function logout(requestBody) {
   if (!verification.verified) {
     return util.buildResponse(401, verification);
   }
-  if ((verification.verified = true)) {
-    // const ct = Math.floor(+new Date() / 1000); // current time & date
-    // override previous token || new token genereted
-
+  if (verification.verified == true) {
     const userInfo = {
       email: verification.email,
     };
     let newToken = jwt.sign(userInfo, process.env.JWT_SECRET, {
-      expiresIn: "1",
+      expiresIn: "1s",
     });
     console.log(newToken);
 
@@ -36,15 +33,8 @@ async function logout(requestBody) {
       if (!verification.verified) {
         return util.buildResponse(401, verification);
       }
-      // return util.buildResponse(200, {
-      //   verified: true,
-      //   message: "success",
-      //   email: verification.email,
-      //   iat: verification.iat,
-      //   exp:verification.exp,
-      // });
       return util.buildResponse(200, {
-        message: "Session Expired Successfully",
+        message: "session expired successfully",
       });
     } // newToken verification
 

@@ -4,10 +4,9 @@ function generateToken(userInfo) {
   if (!userInfo) {
     return null;
   }
-  let a = jwt.sign(userInfo, process.env.JWT_SECRET, {
+  return jwt.sign(userInfo, process.env.JWT_SECRET, {
     expiresIn: "24h",
   });
-  console.log(a);
 }
 
 function generateResetToken(resetInfo) {

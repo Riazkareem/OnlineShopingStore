@@ -11,7 +11,7 @@ function response(statusCode, message) {
 
 exports.deletecsv = async (event, context, callback) => {
   try {
-    const filename = event.pathParameters.name;
+    const filename = event.pathParameters.filename;
     return await s3
       .deleteObject({ Bucket: BUCKET_NAME, Key: filename })
       .promise()
