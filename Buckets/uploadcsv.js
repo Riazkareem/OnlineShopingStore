@@ -22,7 +22,7 @@ module.exports.uploadcsv = async (event) => {
       Bucket: BUCKET_NAME,
       Key: parsedBody.fileKey,
       Body: decodedFile,
-      ContentType: "file/csv",
+      ContentType: "text/csv",
     };
     const uploadResult = await s3.upload(params).promise();
 
