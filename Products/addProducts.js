@@ -2,8 +2,10 @@
 const AWS = require("aws-sdk");
 const db = new AWS.DynamoDB.DocumentClient();
 const uuid = require("uuid");
+const auth = require("../Users/utils/auth");
 
 const productsTable = process.env.PRODUCTS_TABLE;
+const userTable = process.env.USERS_TABLE;
 // Create a response
 function response(statusCode, message) {
   return {
@@ -19,6 +21,7 @@ function sortByDate(a, b) {
 // addProducts
 
 async function register(Info) {
+  const authtoken = Info.token;
   const productname = Info.productname;
   const price = Info.price;
   const description = Info.description;
@@ -27,6 +30,7 @@ async function register(Info) {
   const featured_image = Info.featured_image;
   const category = Info.category;
   const tags = Info.tags;
+
   if (
     !productname ||
     !price ||
@@ -35,34 +39,68 @@ async function register(Info) {
     !images ||
     !featured_image ||
     !category ||
-    !tags
+    !tags ||
+    !authtoken
   ) {
     return response(401, {
       message: "All fields are required",
     });
   }
 
-  const data = {
-    id: uuid.v1(),
-    name: productname,
-    price: price,
-    description: description,
-    quantity: quantity,
-    images: images,
-    featured_image: featured_image,
-    category: category,
-    tags: tags,
-    createdAt: new Date().toISOString(),
-  };
+  // authentication
+  const verification = auth.verifyAuthToken(authtoken);
+  if (!verification.verified) {
+    return response(401, verification);
+  }
+  if ((verification.verified = true)) {
+    var authemail = verification.email;
+    // fetch user from table having roles
+    const dynamoUser = await getUser(authemail);
+    const roleemail = dynamoUser.email;
+    const role = dynamoUser.myrole;
+    if (dynamoUser && roleemail && role == "undefined") {
+      return response(401, {
+        message: roleemail + " is not valid user having role of " + role,
+      });
+    }
 
-  const saveResponse = await save(data);
-  if (!saveResponse) {
-    return response(503, {
-      message: "Server Error. Please try again later.",
+    // if(authemail==='riaz@gmail.com'){
+    if (authemail === roleemail) {
+      // valid role
+      const data = {
+        id: uuid.v1(),
+        name: productname,
+        price: price,
+        description: description,
+        quantity: quantity,
+        images: images,
+        featured_image: featured_image,
+        category: category,
+        tags: tags,
+        createdAt: new Date().toISOString(),
+      };
+      const saveResponse = await save(data);
+      if (!saveResponse) {
+        return response(503, {
+          message: "Server Error. Please try again later.",
+        });
+      }
+
+      return response(200, { data });
+      // valid role
+    } else {
+      // invlaid role
+      return response(401, {
+        message: "You have dont permission to this api",
+      });
+    }
+    //
+  } else {
+    // invalid role
+    return response(401, {
+      message: "Query failed",
     });
   }
-
-  return response(200, { data });
 }
 
 async function save(data) {
@@ -348,3 +386,32 @@ module.exports.searchProduct = (event, context, callback) => {
     callback(null, response(err.statusCode, err));
   }
 };
+
+// getting user role
+async function getUser(authemail) {
+  const params = {
+    TableName: userTable,
+    Key: {
+      email: authemail,
+    },
+    // ProjectionExpression: "myrole"
+  };
+
+  const response = await db.get(params).promise();
+  if (response) {
+    const myrole = response.Item.myrole; //
+    if (myrole === "admin") {
+      console.log(response.Item.myrole);
+      return response.Item;
+    } else {
+      console.log(response.Item.myrole);
+      // return response.Item;
+      return false;
+    }
+  } else {
+    console.error("There is an error getting user: ");
+    return false;
+  }
+
+  //
+}

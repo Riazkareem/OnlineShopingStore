@@ -77,8 +77,28 @@ function verifyLogoutToken(token) {
   });
 }
 
+// verify user authentication
+function verifyAuthToken(authtoken) {
+  return jwt.verify(authtoken, process.env.JWT_SECRET, (error, response) => {
+    if (error) {
+      return {
+        verified: false,
+        message: "invalid Auth Token",
+      };
+    }
+    return {
+      email: response.email,
+      exp: response.exp,
+      iat: response.iat,
+      verified: true,
+      message: "Auth token is verifed",
+    };
+  });
+}
+
 module.exports.generateToken = generateToken;
 module.exports.generateResetToken = generateResetToken;
 module.exports.verifyToken = verifyToken;
 module.exports.verifyResetToken = verifyResetToken;
 module.exports.verifyLogoutToken = verifyLogoutToken;
+module.exports.verifyAuthToken = verifyAuthToken; // auth token
