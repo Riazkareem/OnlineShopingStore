@@ -452,7 +452,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/index.handler",
         "Runtime": "nodejs12.x",
@@ -468,7 +468,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -489,7 +490,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/index.handler",
         "Runtime": "nodejs12.x",
@@ -505,7 +506,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -526,7 +528,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/index.handler",
         "Runtime": "nodejs12.x",
@@ -542,7 +544,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -563,7 +566,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/index.handler",
         "Runtime": "nodejs12.x",
@@ -579,7 +582,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -600,7 +604,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/index.handler",
         "Runtime": "nodejs12.x",
@@ -616,7 +620,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -637,7 +642,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/index.handler",
         "Runtime": "nodejs12.x",
@@ -653,7 +658,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -674,7 +680,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/index.handler",
         "Runtime": "nodejs12.x",
@@ -690,7 +696,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -711,7 +718,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/users.getAllUsers",
         "Runtime": "nodejs12.x",
@@ -727,7 +734,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -748,7 +756,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/users.getUsers",
         "Runtime": "nodejs12.x",
@@ -764,7 +772,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -785,7 +794,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/users.getUser",
         "Runtime": "nodejs12.x",
@@ -801,7 +810,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -822,7 +832,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/users.updateUser",
         "Runtime": "nodejs12.x",
@@ -838,7 +848,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -859,7 +870,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Users/users.deleteUser",
         "Runtime": "nodejs12.x",
@@ -875,7 +886,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -896,7 +908,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/products.uploadfile",
         "Runtime": "nodejs12.x",
@@ -912,7 +924,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -933,7 +946,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/uploadcsv.uploadcsv",
         "Runtime": "nodejs12.x",
@@ -949,7 +962,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -970,7 +984,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/csvtodynamodb.csvtodynamodb",
         "Runtime": "nodejs12.x",
@@ -986,7 +1000,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1007,7 +1022,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Buckets/uploadcsv.uploadcsv",
         "Runtime": "nodejs12.x",
@@ -1023,7 +1038,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1044,7 +1060,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Buckets/listcsv.listcsv",
         "Runtime": "nodejs12.x",
@@ -1060,7 +1076,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1081,7 +1098,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Buckets/deletecsv.deletecsv",
         "Runtime": "nodejs12.x",
@@ -1097,7 +1114,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1118,7 +1136,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Buckets/searchcsv.searchcsv",
         "Runtime": "nodejs12.x",
@@ -1134,7 +1152,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1155,7 +1174,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/addProducts.addProducts",
         "Runtime": "nodejs12.x",
@@ -1171,7 +1190,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1192,7 +1212,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/addProducts.getAllProducts",
         "Runtime": "nodejs12.x",
@@ -1208,7 +1228,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1229,7 +1250,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/addProducts.getProducts",
         "Runtime": "nodejs12.x",
@@ -1245,7 +1266,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1266,7 +1288,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/addProducts.getProduct",
         "Runtime": "nodejs12.x",
@@ -1282,7 +1304,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1303,7 +1326,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/addProducts.updateProduct",
         "Runtime": "nodejs12.x",
@@ -1319,7 +1342,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1340,7 +1364,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/addProducts.deleteProduct",
         "Runtime": "nodejs12.x",
@@ -1356,7 +1380,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1377,7 +1402,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Products/addProducts.searchProduct",
         "Runtime": "nodejs12.x",
@@ -1393,7 +1418,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1414,7 +1440,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Categories/categories.addCategories",
         "Runtime": "nodejs12.x",
@@ -1430,7 +1456,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1451,7 +1478,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Categories/categories.allCategories",
         "Runtime": "nodejs12.x",
@@ -1467,7 +1494,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1488,7 +1516,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Categories/categories.getCategories",
         "Runtime": "nodejs12.x",
@@ -1504,7 +1532,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1525,7 +1554,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Categories/categories.getCategory",
         "Runtime": "nodejs12.x",
@@ -1541,7 +1570,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1562,7 +1592,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Categories/categories.updateCategories",
         "Runtime": "nodejs12.x",
@@ -1578,7 +1608,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1599,7 +1630,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Categories/categories.deleteCategories",
         "Runtime": "nodejs12.x",
@@ -1615,7 +1646,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1636,7 +1668,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Tags/tags.addTags",
         "Runtime": "nodejs12.x",
@@ -1652,7 +1684,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1673,7 +1706,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Tags/tags.allTags",
         "Runtime": "nodejs12.x",
@@ -1689,7 +1722,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1710,7 +1744,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Tags/tags.getTags",
         "Runtime": "nodejs12.x",
@@ -1726,7 +1760,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1747,7 +1782,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Tags/tags.getTag",
         "Runtime": "nodejs12.x",
@@ -1763,7 +1798,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1784,7 +1820,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Tags/tags.updateTags",
         "Runtime": "nodejs12.x",
@@ -1800,7 +1836,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1821,7 +1858,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Tags/tags.deleteTag",
         "Runtime": "nodejs12.x",
@@ -1837,7 +1874,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1858,7 +1896,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Order/order.addOrder",
         "Runtime": "nodejs12.x",
@@ -1874,7 +1912,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1895,7 +1934,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Order/order.allOrders",
         "Runtime": "nodejs12.x",
@@ -1911,7 +1950,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1932,7 +1972,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Order/order.getOrders",
         "Runtime": "nodejs12.x",
@@ -1948,7 +1988,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -1969,7 +2010,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Order/order.getSingleOrder",
         "Runtime": "nodejs12.x",
@@ -1985,7 +2026,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -2006,7 +2048,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Order/order.updateOrder",
         "Runtime": "nodejs12.x",
@@ -2022,7 +2064,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -2043,7 +2086,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "Order/order.deleteOrder",
         "Runtime": "nodejs12.x",
@@ -2059,7 +2102,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -2080,7 +2124,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/OnlineStore/dev/1670242980393-2022-12-05T12:23:00.393Z/OnlineStore.zip"
+          "S3Key": "serverless/OnlineStore/dev/1670415565665-2022-12-07T12:19:25.665Z/OnlineStore.zip"
         },
         "Handler": "paymentMethod/index.handler",
         "Runtime": "nodejs12.x",
@@ -2096,7 +2140,8 @@
             "ORDER_TABLE": "OnlineStoreOrder",
             "IMAGES_BUCKET": "onlinestoreimages",
             "ONLINESTORE_CSV": "onlinestorecsv",
-            "JWT_SECRET": "OnlineStoreUser"
+            "JWT_SECRET": "OnlineStoreUser",
+            "SECURE_APIKEY": "apikey1"
           }
         },
         "Role": {
@@ -2110,454 +2155,454 @@
         "PaymentMethodLogGroup"
       ]
     },
-    "HomeLambdaVersion6znszCzIZmBwPyygyOJIC0vGvB65QdKHSeUnu3pZ8": {
+    "HomeLambdaVersionZZAOsLbXdvXZQAQmBRG4V3y9zd4Sukex16HAQPqSwg0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HomeLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "RegisterLambdaVersionj0cmLp0vby8uGELUbHGFzUnFXrjScy1gpTcdaGIqSg": {
+    "RegisterLambdaVersioncgJbPyt9LzJK4cgRhOHMz79Ot6oX59ehZEaFtwzv9s": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "RegisterLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "LoginLambdaVersionK42VIdiuHlrVMPhh72BwRB4MERK3NypomM5q9fyqMOY": {
+    "LoginLambdaVersionopM8TrXPjYldSmurRTfBzzlYG51JyqqKUY8SM2Jirc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "VerifyLambdaVersiontp7mm0JyPvyVASUwcYyCzZ1QaNTxXKnBGg737U2s": {
+    "VerifyLambdaVersionqOlIIFfo7KTe5ySGXvaPOy9OSDNAODR0AFfAiGlQTg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "VerifyLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AccountDashrecoveryLambdaVersioniuLjnTaQRswqSowShK1tlc1Qxf7qWF3ujQ13sJBg": {
+    "AccountDashrecoveryLambdaVersion47UIzeB4aK6mbpNb4GTjv33vhMMsyh6vHZPTO9J400": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AccountDashrecoveryLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "ResetPasswordLambdaVersionJd1VxQ10N3J6xXU8z3aPC0MNJX4CqPvsxbyz4gOlm8": {
+    "ResetPasswordLambdaVersion2GO10P6pIEIp2vu1LumhsiGlH79I8aNGldyc4PsY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ResetPasswordLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "LogoutLambdaVersionzVyjcUEWCISJjuWY8CiJuAupHM8VEm5ebSiNVldw": {
+    "LogoutLambdaVersion2pk3sUaaV1Ne1SCBQgPIvbf2EWxreJmdFzS8R01FSU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LogoutLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetAllUsersLambdaVersionVAsmlOQLnchvk9LMYzbEua4NfABrCG8BnqQlMOhhDzk": {
+    "GetAllUsersLambdaVersionSY4BBN23qLuhLGCw18wXxRXMvsK447hUbUhmkqrE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllUsersLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetUsersLambdaVersionKq3LktHhhALj196LlKNAQM7d4sfXdCZXtwemNRc1Nk": {
+    "GetUsersLambdaVersionYYVbBOS8IbIsUhHgxBEKHiYc4Fg4JXcd4VPIRnQJOXs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetUsersLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetUserLambdaVersionifjZLwsG3vMCGzhADf98XxVMkHpBN4GT0HDYQPRmlg": {
+    "GetUserLambdaVersionThSRYOD1V0sTpmIkerPrl74s88cSDhD9SWYGknRc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetUserLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "UpdateUserLambdaVersionNmYtd0nr8wtx1SM8UR01CYp4LsY6g1Nylz8OlDPeI": {
+    "UpdateUserLambdaVersionor7mMvLdvQuCq34Y57n9JYoaOoQTypZWPN5mRBNx14": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateUserLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "DeleteUserLambdaVersion1ybYiqtZTH3WSv5qqbgXoiAW3dOv1jlbRyelQzsEbpo": {
+    "DeleteUserLambdaVersionYphu8tH8nLERUgJY1RgDfggFLvFypqSYLMJyc1HCLo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteUserLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "S3FileUploaderLambdaVersionG7hB1IodidGBFRIVqdO9L2bU88BbLWkRE1mWj2dlck": {
+    "S3FileUploaderLambdaVersionLWEFIotCdCM1wMt9P2xzPCaKe450f9al3nQroGFx0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "S3FileUploaderLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "CsvUploaderLambdaVersionEXdj2HBGjKe2z9hr7rEeL1usqZAMYZuOVlpsY1ab8": {
+    "CsvUploaderLambdaVersionwsjAgFbPlHlNXFbf4LtO0uZ0RGre8ZHSJbuFG7ZvBTg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CsvUploaderLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "CsvToDynamodbLambdaVersioncN4rC74n3yONtyhK5gNhXQvJJf0xdLbHEb39AtUeos": {
+    "CsvToDynamodbLambdaVersion7t1kFbYPXwS0wjZH68NUKPSmYotvyNGnYlrYOwmhwM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CsvToDynamodbLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "UploadCSVLambdaVersionJr5RvUeIDmqbHXuHBzkJvG03cdjshoaZCJw8FwjVJsM": {
+    "UploadCSVLambdaVersionN7Lx36EnzKReBBOqCOhwbV0ojWzXrRir7bumEoxsifo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UploadCSVLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "ListcsvLambdaVersionl7gsziiSQsHHN158zdd6VuUTN4QWlPWk6jpGEJ4yo": {
+    "ListcsvLambdaVersionVtruiLtZeyznzuCQIkZWzaz5wp3rgqAeeZSR7SASl4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListcsvLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "DeletecsvLambdaVersionD8pCI1jymRQ7mQydZxKYiicO0lZ3wXDehdgpCzlwFEo": {
+    "DeletecsvLambdaVersionSlsvcM7gZ5li33naOPp4ZAfpNbbIeaSXr46DFznzs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeletecsvLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "SearchcsvLambdaVersionbJZeIoOWVX04low2p6LV8PQYrE1dzRGOeC7jZAoE": {
+    "SearchcsvLambdaVersionUOYLPWG3uJxnuC77xv9cb1YZjqx3Y6aQRYSOJtgirI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SearchcsvLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AddProductsLambdaVersionjSUU5slenN7Hhb0xoAHJ32DgmfCTDIw6e5Bqs34LgA": {
+    "AddProductsLambdaVersionKNYngdztZxZU4QLGerVH7GMGqiieWQ6VvlMhHctM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AddProductsLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetAllProductsLambdaVersionNHdQaxDvwgCIDdCLFrLE02KK0iJlnADYSzlw": {
+    "GetAllProductsLambdaVersionvmxS3NeGgSurbvtVoO0FUhm41t9eYB4U2Zmnh6HA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllProductsLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetProductsLambdaVersionBnZiylfghrX0Me6kMuKyFzVhBmuQyXLpSQgTOB41no": {
+    "GetProductsLambdaVersion7UhTMGdfAUZd75FLQMtkCNwOQNK1vve6SKOKs5ic": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetProductsLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetProductLambdaVersion7escifiwxJD4ql3BLj5qNFaQzlmMLqXEvoJRhkFxo": {
+    "GetProductLambdaVersionXTuUdwpnCR1ygw2l9EJhnUuHTCuMtABylQsPDxo4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetProductLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "UpdateProductLambdaVersion3uRwDWlGWak7pnMRlBHA8V6NeqtsETdQE3I6MrYWbQc": {
+    "UpdateProductLambdaVersionyfDSn8pIKwaqxB3TBqwG7BZDoVEht7OV0WgV1h1hR4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateProductLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "DeleteProductLambdaVersionT35X8CCYFnEOHCJ4patMxrCtJe1ZpTZ1fdzQZfT8iI": {
+    "DeleteProductLambdaVersionhLYB0KFrE1BtGcziYJt2oIJmBnycM4pbjHMhrD2zY5I": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteProductLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "SearchProductLambdaVersionsGQlrZA2DaQa57YxZVZIztOVaabMpJfTgCYzcWsPi54": {
+    "SearchProductLambdaVersion0uRa5zT2MVSYcYbcPY05SFX8ElbWm1LygwJ8n9sU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SearchProductLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AddCategoriesLambdaVersionj2a4OISeupzDgCb8WAwi4TRszdW6hX1e6RpY2AKcmk": {
+    "AddCategoriesLambdaVersionYmwqfDFcZuRKJmvI4XP98Y6OnBtgaZDcx9uzms5SnU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AddCategoriesLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AllCategoriesLambdaVersionyZ3OJp3cA4V2FTHyTyixpQ9APY8e7BJFZKmqK9BDt8": {
+    "AllCategoriesLambdaVersionggUqzYOrTLWZDIK8J7sjm9Oe28CxTsFYprdH4Zh4wQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AllCategoriesLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetCategoriesLambdaVersioncRvZTyiwNCSRrVJ74sAaDh152tpcbpH8Sz5uLq35M": {
+    "GetCategoriesLambdaVersionow5sIqtpHP3zzLc4JhuWIX5iPC3jvPlMS0QEHJpqO0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetCategoriesLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetCategoryLambdaVersion4uTop9ipo0zn0dNezYSCvwoVSmb0bhCcmvndALG44E": {
+    "GetCategoryLambdaVersionOx88QU8sn7QOdOuFlCCMJidw5NW3kfwDf9aDAY7TRGQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetCategoryLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "UpdateCategoriesLambdaVersionNPwYbSNiaV9BsFy5eRvDw14ItayeLfwbHtJQfa7tY": {
+    "UpdateCategoriesLambdaVersionRmzu8W5wkifQ6hXLJL0PIFfhYlp9mEFbI0gZ7jeU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateCategoriesLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "DeleteCategoriesLambdaVersionJ7RpYgTeohGwU4XkJ5vHxvEpFpbaKHTE0oOAGmxrR4": {
+    "DeleteCategoriesLambdaVersiona0YPpk8ssMXCQ1rZe8i0aVkY3GTaMdePT2sqfvFI8AU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteCategoriesLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AddTagsLambdaVersionb98f1epaSptmKp7sl7gViranrYjGOtjk5nvXNgmwSXU": {
+    "AddTagsLambdaVersionwi3EheNLvg9DE2X01TzLunA8tNfxiNYDLFc1w2bQf8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AddTagsLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AllTagsLambdaVersionwki7Vxjfv86KovMD8YzweyMh0eW0wGt0T0YOJNNg": {
+    "AllTagsLambdaVersionIdqOtwbeNNZ3ZvphEvp3Bko2KHrtX7Z1NIfesKtOjLs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AllTagsLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetTagsLambdaVersionO8NGQwtu4kdHmnIRJH6TaQKf4Nq06AeIlwvf3Brg6k": {
+    "GetTagsLambdaVersionac3B182cAvOiPdeolhXPPBeFaSTZivyn2OAPmhgdRs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetTagsLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetTagLambdaVersionaax8S5tbeQb1GwZZiZwuGpgeDLqKc4AvvdS4TdXzo8": {
+    "GetTagLambdaVersionf8sGv1LFCSvRAC4HAzusGcbaAXz7FY1cqkET1GjL13I": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetTagLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "UpdateTagsLambdaVersionigW4u31edCr9glksgaVtEaRDih7FxSTe6PlTv4X4": {
+    "UpdateTagsLambdaVersionkFwTt8FKqLB87nQUCxSxYOB96rVcCbQavAdASMM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateTagsLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "DeleteTagLambdaVersionRgkCarwgV4jG0m3LebkCiWxiPG91I4B4ncDzVVW03M": {
+    "DeleteTagLambdaVersionvVoJEL6dT2xFWb8Tmq0NlnbxD0857Z4sv9Wn5AreA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteTagLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AddOrderLambdaVersionO1QlgvheM1fw8g0vixUyQAgYBEsmbAm2q5gWk8VY": {
+    "AddOrderLambdaVersionDx9NExXLa0ms20P4jxB7XtSqrWElEIoio6u8cu65wcc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AddOrderLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "AllOrdersLambdaVersionpyGzalPPIFKDjyeoWSzwT7dMUuOFbWFzevvu3QXe81Y": {
+    "AllOrdersLambdaVersionK7kSigBQR6NtmuJFcRIN2uLYF2V239qxTlIb47SR1w": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AllOrdersLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetOrdersLambdaVersionxdFvap0UYwD43dJdf7lsWRzPzpr5owo54MD1oJg2Evo": {
+    "GetOrdersLambdaVersionwq19OGvOqhEHfPB42OrOMjAQr444vxFd4YWrKWCxc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetOrdersLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "GetSingleOrderLambdaVersion28c7dBc7B0Ski0VHhX66cFlw8nyA81S6RhH9xWsc": {
+    "GetSingleOrderLambdaVersionks7t34pDCNf7Ikkvdp3TAIFPj71aXf7y0VkLMRtN1yg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetSingleOrderLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "UpdateOrderLambdaVersionNZi5qJtHgfSnpVnEz1mCyTcbbpQDX4gDpHJfZA4dNw": {
+    "UpdateOrderLambdaVersiongKCEHA44Q8w2fUMlPcKsSp1nZRpQLP5PRYGXzQkaZTQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateOrderLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "DeleteOrderLambdaVersion5RPz8ieFFkz28uT8mTkyAbx6hkvr4SZGKblLxpKOuo": {
+    "DeleteOrderLambdaVersion4q9YAZUvX8asFYba2K8UdgqPualxAWmWhFXyOzskPSs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteOrderLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
-    "PaymentMethodLambdaVersionOhxZGGF7luUCy71x28xeB0pUpqD6awPjVFPq72R9tI": {
+    "PaymentMethodLambdaVersiontjwSpQ1elONCiiaVyL6LHIELUTJIj1TCHgW2dYuzcU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PaymentMethodLambdaFunction"
         },
-        "CodeSha256": "jJVK25DhsF8xys3eudNiNyBY+FUvk0rC01XUxbEybGg="
+        "CodeSha256": "iDndK7WESnEGWIayrf6LI+a1PJSwokwd8oQgAC2vT6U="
       }
     },
     "ApiGatewayRestApi": {
@@ -5415,7 +5460,7 @@
         "PaymentMethodLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1670242908481": {
+    "ApiGatewayDeployment1670415508737": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -5470,6 +5515,50 @@
         "ApiGatewayMethodDeleteorderIdVarDelete",
         "ApiGatewayMethodPaymentmethodPost"
       ]
+    },
+    "ApiGatewayApiKey1": {
+      "Type": "AWS::ApiGateway::ApiKey",
+      "Properties": {
+        "Enabled": true,
+        "Name": "apikey1",
+        "StageKeys": [
+          {
+            "RestApiId": {
+              "Ref": "ApiGatewayRestApi"
+            },
+            "StageName": "dev"
+          }
+        ]
+      },
+      "DependsOn": "ApiGatewayDeployment1670415508737"
+    },
+    "ApiGatewayUsagePlan": {
+      "Type": "AWS::ApiGateway::UsagePlan",
+      "DependsOn": "ApiGatewayDeployment1670415508737",
+      "Properties": {
+        "ApiStages": [
+          {
+            "ApiId": {
+              "Ref": "ApiGatewayRestApi"
+            },
+            "Stage": "dev"
+          }
+        ],
+        "Description": "Usage plan for OnlineStore dev stage",
+        "UsagePlanName": "OnlineStore-dev"
+      }
+    },
+    "ApiGatewayUsagePlanKey1": {
+      "Type": "AWS::ApiGateway::UsagePlanKey",
+      "Properties": {
+        "KeyId": {
+          "Ref": "ApiGatewayApiKey1"
+        },
+        "KeyType": "API_KEY",
+        "UsagePlanId": {
+          "Ref": "ApiGatewayUsagePlan"
+        }
+      }
     },
     "HomeLambdaPermissionApiGateway": {
       "Type": "AWS::Lambda::Permission",
@@ -7271,7 +7360,7 @@
     "HomeLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HomeLambdaVersion6znszCzIZmBwPyygyOJIC0vGvB65QdKHSeUnu3pZ8"
+        "Ref": "HomeLambdaVersionZZAOsLbXdvXZQAQmBRG4V3y9zd4Sukex16HAQPqSwg0"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-HomeLambdaFunctionQualifiedArn"
@@ -7280,7 +7369,7 @@
     "RegisterLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "RegisterLambdaVersionj0cmLp0vby8uGELUbHGFzUnFXrjScy1gpTcdaGIqSg"
+        "Ref": "RegisterLambdaVersioncgJbPyt9LzJK4cgRhOHMz79Ot6oX59ehZEaFtwzv9s"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-RegisterLambdaFunctionQualifiedArn"
@@ -7289,7 +7378,7 @@
     "LoginLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginLambdaVersionK42VIdiuHlrVMPhh72BwRB4MERK3NypomM5q9fyqMOY"
+        "Ref": "LoginLambdaVersionopM8TrXPjYldSmurRTfBzzlYG51JyqqKUY8SM2Jirc"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-LoginLambdaFunctionQualifiedArn"
@@ -7298,7 +7387,7 @@
     "VerifyLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "VerifyLambdaVersiontp7mm0JyPvyVASUwcYyCzZ1QaNTxXKnBGg737U2s"
+        "Ref": "VerifyLambdaVersionqOlIIFfo7KTe5ySGXvaPOy9OSDNAODR0AFfAiGlQTg"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-VerifyLambdaFunctionQualifiedArn"
@@ -7307,7 +7396,7 @@
     "AccountDashrecoveryLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AccountDashrecoveryLambdaVersioniuLjnTaQRswqSowShK1tlc1Qxf7qWF3ujQ13sJBg"
+        "Ref": "AccountDashrecoveryLambdaVersion47UIzeB4aK6mbpNb4GTjv33vhMMsyh6vHZPTO9J400"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AccountDashrecoveryLambdaFunctionQualifiedArn"
@@ -7316,7 +7405,7 @@
     "ResetPasswordLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ResetPasswordLambdaVersionJd1VxQ10N3J6xXU8z3aPC0MNJX4CqPvsxbyz4gOlm8"
+        "Ref": "ResetPasswordLambdaVersion2GO10P6pIEIp2vu1LumhsiGlH79I8aNGldyc4PsY"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-ResetPasswordLambdaFunctionQualifiedArn"
@@ -7325,7 +7414,7 @@
     "LogoutLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LogoutLambdaVersionzVyjcUEWCISJjuWY8CiJuAupHM8VEm5ebSiNVldw"
+        "Ref": "LogoutLambdaVersion2pk3sUaaV1Ne1SCBQgPIvbf2EWxreJmdFzS8R01FSU"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-LogoutLambdaFunctionQualifiedArn"
@@ -7334,7 +7423,7 @@
     "GetAllUsersLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllUsersLambdaVersionVAsmlOQLnchvk9LMYzbEua4NfABrCG8BnqQlMOhhDzk"
+        "Ref": "GetAllUsersLambdaVersionSY4BBN23qLuhLGCw18wXxRXMvsK447hUbUhmkqrE"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetAllUsersLambdaFunctionQualifiedArn"
@@ -7343,7 +7432,7 @@
     "GetUsersLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetUsersLambdaVersionKq3LktHhhALj196LlKNAQM7d4sfXdCZXtwemNRc1Nk"
+        "Ref": "GetUsersLambdaVersionYYVbBOS8IbIsUhHgxBEKHiYc4Fg4JXcd4VPIRnQJOXs"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetUsersLambdaFunctionQualifiedArn"
@@ -7352,7 +7441,7 @@
     "GetUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetUserLambdaVersionifjZLwsG3vMCGzhADf98XxVMkHpBN4GT0HDYQPRmlg"
+        "Ref": "GetUserLambdaVersionThSRYOD1V0sTpmIkerPrl74s88cSDhD9SWYGknRc"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetUserLambdaFunctionQualifiedArn"
@@ -7361,7 +7450,7 @@
     "UpdateUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateUserLambdaVersionNmYtd0nr8wtx1SM8UR01CYp4LsY6g1Nylz8OlDPeI"
+        "Ref": "UpdateUserLambdaVersionor7mMvLdvQuCq34Y57n9JYoaOoQTypZWPN5mRBNx14"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-UpdateUserLambdaFunctionQualifiedArn"
@@ -7370,7 +7459,7 @@
     "DeleteUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteUserLambdaVersion1ybYiqtZTH3WSv5qqbgXoiAW3dOv1jlbRyelQzsEbpo"
+        "Ref": "DeleteUserLambdaVersionYphu8tH8nLERUgJY1RgDfggFLvFypqSYLMJyc1HCLo"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-DeleteUserLambdaFunctionQualifiedArn"
@@ -7379,7 +7468,7 @@
     "S3FileUploaderLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "S3FileUploaderLambdaVersionG7hB1IodidGBFRIVqdO9L2bU88BbLWkRE1mWj2dlck"
+        "Ref": "S3FileUploaderLambdaVersionLWEFIotCdCM1wMt9P2xzPCaKe450f9al3nQroGFx0"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-S3FileUploaderLambdaFunctionQualifiedArn"
@@ -7388,7 +7477,7 @@
     "CsvUploaderLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CsvUploaderLambdaVersionEXdj2HBGjKe2z9hr7rEeL1usqZAMYZuOVlpsY1ab8"
+        "Ref": "CsvUploaderLambdaVersionwsjAgFbPlHlNXFbf4LtO0uZ0RGre8ZHSJbuFG7ZvBTg"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-CsvUploaderLambdaFunctionQualifiedArn"
@@ -7397,7 +7486,7 @@
     "CsvToDynamodbLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CsvToDynamodbLambdaVersioncN4rC74n3yONtyhK5gNhXQvJJf0xdLbHEb39AtUeos"
+        "Ref": "CsvToDynamodbLambdaVersion7t1kFbYPXwS0wjZH68NUKPSmYotvyNGnYlrYOwmhwM"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-CsvToDynamodbLambdaFunctionQualifiedArn"
@@ -7406,7 +7495,7 @@
     "UploadCSVLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UploadCSVLambdaVersionJr5RvUeIDmqbHXuHBzkJvG03cdjshoaZCJw8FwjVJsM"
+        "Ref": "UploadCSVLambdaVersionN7Lx36EnzKReBBOqCOhwbV0ojWzXrRir7bumEoxsifo"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-UploadCSVLambdaFunctionQualifiedArn"
@@ -7415,7 +7504,7 @@
     "ListcsvLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListcsvLambdaVersionl7gsziiSQsHHN158zdd6VuUTN4QWlPWk6jpGEJ4yo"
+        "Ref": "ListcsvLambdaVersionVtruiLtZeyznzuCQIkZWzaz5wp3rgqAeeZSR7SASl4"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-ListcsvLambdaFunctionQualifiedArn"
@@ -7424,7 +7513,7 @@
     "DeletecsvLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeletecsvLambdaVersionD8pCI1jymRQ7mQydZxKYiicO0lZ3wXDehdgpCzlwFEo"
+        "Ref": "DeletecsvLambdaVersionSlsvcM7gZ5li33naOPp4ZAfpNbbIeaSXr46DFznzs"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-DeletecsvLambdaFunctionQualifiedArn"
@@ -7433,7 +7522,7 @@
     "SearchcsvLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SearchcsvLambdaVersionbJZeIoOWVX04low2p6LV8PQYrE1dzRGOeC7jZAoE"
+        "Ref": "SearchcsvLambdaVersionUOYLPWG3uJxnuC77xv9cb1YZjqx3Y6aQRYSOJtgirI"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-SearchcsvLambdaFunctionQualifiedArn"
@@ -7442,7 +7531,7 @@
     "AddProductsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AddProductsLambdaVersionjSUU5slenN7Hhb0xoAHJ32DgmfCTDIw6e5Bqs34LgA"
+        "Ref": "AddProductsLambdaVersionKNYngdztZxZU4QLGerVH7GMGqiieWQ6VvlMhHctM"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AddProductsLambdaFunctionQualifiedArn"
@@ -7451,7 +7540,7 @@
     "GetAllProductsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllProductsLambdaVersionNHdQaxDvwgCIDdCLFrLE02KK0iJlnADYSzlw"
+        "Ref": "GetAllProductsLambdaVersionvmxS3NeGgSurbvtVoO0FUhm41t9eYB4U2Zmnh6HA"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetAllProductsLambdaFunctionQualifiedArn"
@@ -7460,7 +7549,7 @@
     "GetProductsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetProductsLambdaVersionBnZiylfghrX0Me6kMuKyFzVhBmuQyXLpSQgTOB41no"
+        "Ref": "GetProductsLambdaVersion7UhTMGdfAUZd75FLQMtkCNwOQNK1vve6SKOKs5ic"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetProductsLambdaFunctionQualifiedArn"
@@ -7469,7 +7558,7 @@
     "GetProductLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetProductLambdaVersion7escifiwxJD4ql3BLj5qNFaQzlmMLqXEvoJRhkFxo"
+        "Ref": "GetProductLambdaVersionXTuUdwpnCR1ygw2l9EJhnUuHTCuMtABylQsPDxo4"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetProductLambdaFunctionQualifiedArn"
@@ -7478,7 +7567,7 @@
     "UpdateProductLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateProductLambdaVersion3uRwDWlGWak7pnMRlBHA8V6NeqtsETdQE3I6MrYWbQc"
+        "Ref": "UpdateProductLambdaVersionyfDSn8pIKwaqxB3TBqwG7BZDoVEht7OV0WgV1h1hR4"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-UpdateProductLambdaFunctionQualifiedArn"
@@ -7487,7 +7576,7 @@
     "DeleteProductLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteProductLambdaVersionT35X8CCYFnEOHCJ4patMxrCtJe1ZpTZ1fdzQZfT8iI"
+        "Ref": "DeleteProductLambdaVersionhLYB0KFrE1BtGcziYJt2oIJmBnycM4pbjHMhrD2zY5I"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-DeleteProductLambdaFunctionQualifiedArn"
@@ -7496,7 +7585,7 @@
     "SearchProductLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SearchProductLambdaVersionsGQlrZA2DaQa57YxZVZIztOVaabMpJfTgCYzcWsPi54"
+        "Ref": "SearchProductLambdaVersion0uRa5zT2MVSYcYbcPY05SFX8ElbWm1LygwJ8n9sU"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-SearchProductLambdaFunctionQualifiedArn"
@@ -7505,7 +7594,7 @@
     "AddCategoriesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AddCategoriesLambdaVersionj2a4OISeupzDgCb8WAwi4TRszdW6hX1e6RpY2AKcmk"
+        "Ref": "AddCategoriesLambdaVersionYmwqfDFcZuRKJmvI4XP98Y6OnBtgaZDcx9uzms5SnU"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AddCategoriesLambdaFunctionQualifiedArn"
@@ -7514,7 +7603,7 @@
     "AllCategoriesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AllCategoriesLambdaVersionyZ3OJp3cA4V2FTHyTyixpQ9APY8e7BJFZKmqK9BDt8"
+        "Ref": "AllCategoriesLambdaVersionggUqzYOrTLWZDIK8J7sjm9Oe28CxTsFYprdH4Zh4wQ"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AllCategoriesLambdaFunctionQualifiedArn"
@@ -7523,7 +7612,7 @@
     "GetCategoriesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetCategoriesLambdaVersioncRvZTyiwNCSRrVJ74sAaDh152tpcbpH8Sz5uLq35M"
+        "Ref": "GetCategoriesLambdaVersionow5sIqtpHP3zzLc4JhuWIX5iPC3jvPlMS0QEHJpqO0"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetCategoriesLambdaFunctionQualifiedArn"
@@ -7532,7 +7621,7 @@
     "GetCategoryLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetCategoryLambdaVersion4uTop9ipo0zn0dNezYSCvwoVSmb0bhCcmvndALG44E"
+        "Ref": "GetCategoryLambdaVersionOx88QU8sn7QOdOuFlCCMJidw5NW3kfwDf9aDAY7TRGQ"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetCategoryLambdaFunctionQualifiedArn"
@@ -7541,7 +7630,7 @@
     "UpdateCategoriesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateCategoriesLambdaVersionNPwYbSNiaV9BsFy5eRvDw14ItayeLfwbHtJQfa7tY"
+        "Ref": "UpdateCategoriesLambdaVersionRmzu8W5wkifQ6hXLJL0PIFfhYlp9mEFbI0gZ7jeU"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-UpdateCategoriesLambdaFunctionQualifiedArn"
@@ -7550,7 +7639,7 @@
     "DeleteCategoriesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteCategoriesLambdaVersionJ7RpYgTeohGwU4XkJ5vHxvEpFpbaKHTE0oOAGmxrR4"
+        "Ref": "DeleteCategoriesLambdaVersiona0YPpk8ssMXCQ1rZe8i0aVkY3GTaMdePT2sqfvFI8AU"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-DeleteCategoriesLambdaFunctionQualifiedArn"
@@ -7559,7 +7648,7 @@
     "AddTagsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AddTagsLambdaVersionb98f1epaSptmKp7sl7gViranrYjGOtjk5nvXNgmwSXU"
+        "Ref": "AddTagsLambdaVersionwi3EheNLvg9DE2X01TzLunA8tNfxiNYDLFc1w2bQf8"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AddTagsLambdaFunctionQualifiedArn"
@@ -7568,7 +7657,7 @@
     "AllTagsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AllTagsLambdaVersionwki7Vxjfv86KovMD8YzweyMh0eW0wGt0T0YOJNNg"
+        "Ref": "AllTagsLambdaVersionIdqOtwbeNNZ3ZvphEvp3Bko2KHrtX7Z1NIfesKtOjLs"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AllTagsLambdaFunctionQualifiedArn"
@@ -7577,7 +7666,7 @@
     "GetTagsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetTagsLambdaVersionO8NGQwtu4kdHmnIRJH6TaQKf4Nq06AeIlwvf3Brg6k"
+        "Ref": "GetTagsLambdaVersionac3B182cAvOiPdeolhXPPBeFaSTZivyn2OAPmhgdRs"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetTagsLambdaFunctionQualifiedArn"
@@ -7586,7 +7675,7 @@
     "GetTagLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetTagLambdaVersionaax8S5tbeQb1GwZZiZwuGpgeDLqKc4AvvdS4TdXzo8"
+        "Ref": "GetTagLambdaVersionf8sGv1LFCSvRAC4HAzusGcbaAXz7FY1cqkET1GjL13I"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetTagLambdaFunctionQualifiedArn"
@@ -7595,7 +7684,7 @@
     "UpdateTagsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateTagsLambdaVersionigW4u31edCr9glksgaVtEaRDih7FxSTe6PlTv4X4"
+        "Ref": "UpdateTagsLambdaVersionkFwTt8FKqLB87nQUCxSxYOB96rVcCbQavAdASMM"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-UpdateTagsLambdaFunctionQualifiedArn"
@@ -7604,7 +7693,7 @@
     "DeleteTagLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteTagLambdaVersionRgkCarwgV4jG0m3LebkCiWxiPG91I4B4ncDzVVW03M"
+        "Ref": "DeleteTagLambdaVersionvVoJEL6dT2xFWb8Tmq0NlnbxD0857Z4sv9Wn5AreA"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-DeleteTagLambdaFunctionQualifiedArn"
@@ -7613,7 +7702,7 @@
     "AddOrderLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AddOrderLambdaVersionO1QlgvheM1fw8g0vixUyQAgYBEsmbAm2q5gWk8VY"
+        "Ref": "AddOrderLambdaVersionDx9NExXLa0ms20P4jxB7XtSqrWElEIoio6u8cu65wcc"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AddOrderLambdaFunctionQualifiedArn"
@@ -7622,7 +7711,7 @@
     "AllOrdersLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AllOrdersLambdaVersionpyGzalPPIFKDjyeoWSzwT7dMUuOFbWFzevvu3QXe81Y"
+        "Ref": "AllOrdersLambdaVersionK7kSigBQR6NtmuJFcRIN2uLYF2V239qxTlIb47SR1w"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-AllOrdersLambdaFunctionQualifiedArn"
@@ -7631,7 +7720,7 @@
     "GetOrdersLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetOrdersLambdaVersionxdFvap0UYwD43dJdf7lsWRzPzpr5owo54MD1oJg2Evo"
+        "Ref": "GetOrdersLambdaVersionwq19OGvOqhEHfPB42OrOMjAQr444vxFd4YWrKWCxc"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetOrdersLambdaFunctionQualifiedArn"
@@ -7640,7 +7729,7 @@
     "GetSingleOrderLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetSingleOrderLambdaVersion28c7dBc7B0Ski0VHhX66cFlw8nyA81S6RhH9xWsc"
+        "Ref": "GetSingleOrderLambdaVersionks7t34pDCNf7Ikkvdp3TAIFPj71aXf7y0VkLMRtN1yg"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-GetSingleOrderLambdaFunctionQualifiedArn"
@@ -7649,7 +7738,7 @@
     "UpdateOrderLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateOrderLambdaVersionNZi5qJtHgfSnpVnEz1mCyTcbbpQDX4gDpHJfZA4dNw"
+        "Ref": "UpdateOrderLambdaVersiongKCEHA44Q8w2fUMlPcKsSp1nZRpQLP5PRYGXzQkaZTQ"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-UpdateOrderLambdaFunctionQualifiedArn"
@@ -7658,7 +7747,7 @@
     "DeleteOrderLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteOrderLambdaVersion5RPz8ieFFkz28uT8mTkyAbx6hkvr4SZGKblLxpKOuo"
+        "Ref": "DeleteOrderLambdaVersion4q9YAZUvX8asFYba2K8UdgqPualxAWmWhFXyOzskPSs"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-DeleteOrderLambdaFunctionQualifiedArn"
@@ -7667,7 +7756,7 @@
     "PaymentMethodLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PaymentMethodLambdaVersionOhxZGGF7luUCy71x28xeB0pUpqD6awPjVFPq72R9tI"
+        "Ref": "PaymentMethodLambdaVersiontjwSpQ1elONCiiaVyL6LHIELUTJIj1TCHgW2dYuzcU"
       },
       "Export": {
         "Name": "sls-OnlineStore-dev-PaymentMethodLambdaFunctionQualifiedArn"

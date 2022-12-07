@@ -30,11 +30,15 @@ custom:
     IMAGES_BUCKET: onlinestoreimages
     ONLINESTORE_CSV: onlinestorecsv
     JWT_SECRET: OnlineStoreUser
+    SECURE_APIKEY: apikey1
 
 provider:
   name: aws
   runtime: nodejs12.x
   region: us-east-1
+  apiGateway:
+    apiKeys:
+      - ${self:custom.settings.SECURE_APIKEY}
   environment: ${self:custom.settings}
   iamRoleStatements:
     - Effect: "Allow"
@@ -223,6 +227,7 @@ functions:
       - http:
           path: /searchproduct/{name}
           method: get
+          # private: true
     # categories
   addCategories:
     handler: Categories/categories.addCategories

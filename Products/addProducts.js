@@ -63,8 +63,6 @@ async function register(Info) {
         message: roleemail + " is not valid user having role of " + role,
       });
     }
-
-    // if(authemail==='riaz@gmail.com'){
     if (authemail === roleemail) {
       // valid role
       const data = {
@@ -85,7 +83,6 @@ async function register(Info) {
           message: "Server Error. Please try again later.",
         });
       }
-
       return response(200, { data });
       // valid role
     } else {
@@ -102,7 +99,6 @@ async function register(Info) {
     });
   }
 }
-
 async function save(data) {
   const params = {
     TableName: productsTable,
@@ -171,14 +167,12 @@ module.exports.getProducts = (event, context, callback) => {
 // Get a single product
 module.exports.getProduct = (event, context, callback) => {
   const id = event.pathParameters.id;
-
   const params = {
     Key: {
       id: id,
     },
     TableName: productsTable,
   };
-
   return db
     .get(params)
     .promise()
@@ -222,6 +216,7 @@ module.exports.getProduct = (event, context, callback) => {
 module.exports.updateProduct = (event, context, callback) => {
   const requestBody = JSON.parse(event.body);
   return modify(
+    requestBody.token,
     requestBody.id,
     requestBody.productname,
     requestBody.price,
@@ -234,6 +229,7 @@ module.exports.updateProduct = (event, context, callback) => {
   );
 };
 async function modify(
+  token,
   id,
   productname,
   price,
@@ -253,47 +249,82 @@ async function modify(
     !images ||
     !featured_image ||
     !category ||
-    !tags
+    !tags ||
+    !token
   ) {
     return response(401, {
       message: "All fields are required",
     });
   }
-  const params = {
-    TableName: productsTable,
-    Key: {
-      id: id,
-    },
-    UpdateExpression: `set productname = :n, price = :p, description=:d,quantity=:q,images=:i,featured_image=:f,category=:c,tags=:t`,
-    ExpressionAttributeValues: {
-      ":n": productname,
-      ":p": price,
-      ":d": description,
-      ":q": quantity,
-      ":i": images,
-      ":f": featured_image,
-      ":c": category,
-      ":t": tags,
-    },
-    ReturnValues: "UPDATED_NEW",
-  };
-  return await db
-    .update(params)
-    .promise()
-    .then(
-      (response) => {
-        const body = {
-          Operation: "UPDATE",
-          Message: "SUCCESS",
-          UpdatedAttributes: response,
-        };
-        return buildResponse(200, body);
-      },
-      (error) => {
-        console.error("Query Failed: ", error);
-      }
-    );
-}
+  // authentication
+  const verification = auth.verifyAuthToken(token);
+  if (!verification.verified) {
+    return response(401, verification);
+  }
+  if ((verification.verified = true)) {
+    var authemail = verification.email;
+    // fetch user from table having roles
+    const dynamoUser = await getUser(authemail);
+    const roleemail = dynamoUser.email;
+    const role = dynamoUser.myrole;
+    if (dynamoUser && roleemail && role == "undefined") {
+      return response(401, {
+        message: roleemail + " is not valid user having role of " + role,
+      });
+    }
+    //
+    if (authemail === roleemail) {
+      // valid role
+      const params = {
+        TableName: productsTable,
+        Key: {
+          id: id,
+        },
+        UpdateExpression: `set productname = :n, price = :p, description=:d,quantity=:q,images=:i,featured_image=:f,category=:c,tags=:t`,
+        ConditionExpression: "attribute_exists (id)",
+        ExpressionAttributeValues: {
+          ":n": productname,
+          ":p": price,
+          ":d": description,
+          ":q": quantity,
+          ":i": images,
+          ":f": featured_image,
+          ":c": category,
+          ":t": tags,
+        },
+        ReturnValues: "UPDATED_NEW",
+      };
+      return await db
+        .update(params)
+        .promise()
+        .then(
+          (response) => {
+            const body = {
+              Operation: "UPDATE",
+              Message: "SUCCESS",
+              UpdatedAttributes: response,
+            };
+            return buildResponse(200, body);
+          },
+          (error) => {
+            console.error("Query Failed: ", error);
+          }
+        );
+      // valid role
+    } else {
+      // invlaid role
+      return response(401, {
+        message: "You have dont permission to this api",
+      });
+    }
+    //
+  } else {
+    // invalid role
+    return response(401, {
+      message: "Query failed",
+    });
+  }
+} // modify function
 //only Responce for update operation
 function buildResponse(statusCode, body) {
   return {
@@ -323,47 +354,90 @@ function buildResponse(statusCode, body) {
 //     .catch((err) => callback(null, response(err.statusCode, err)));
 // };
 
-module.exports.deleteProduct = (event, context, callback) => {
+module.exports.deleteProduct = async (event, context, callback) => {
   const id = event.pathParameters.id;
-  const dynamoUser = getUser(id);
-  if (dynamoUser && dynamoUser.id) {
+  const requestBody = JSON.parse(event.body);
+  const authtoken = requestBody.token;
+  if (!id || !authtoken) {
     return response(401, {
-      message: "Data Found",
+      message: "All fields are required",
     });
   }
-  async function getUser(id) {
-    const params = {
-      TableName: productsTable,
-      Key: {
-        id: id,
-      },
-    };
-    return db
-      .get(params)
-      .promise()
-      .then((res) => {
-        if (res.Item)
-          callback(
-            null,
-            response(
-              200,
-              db
-                .delete(params)
-                .promise()
-                .then(
-                  callback(
-                    null,
-                    response(200, { message: "Product Deleted successfully" })
+  // authentication
+  const verification = auth.verifyAuthToken(authtoken);
+  if (!verification.verified) {
+    return response(401, verification);
+  }
+  if ((verification.verified = true)) {
+    var authemail = verification.email;
+    // fetch user from table having roles
+    const dynamoUser = await getUser(authemail);
+    const roleemail = dynamoUser.email;
+    const role = dynamoUser.myrole;
+    if (dynamoUser && roleemail && role == "undefined") {
+      return response(401, {
+        message: roleemail + " is not valid user having role of " + role,
+      });
+    } else {
+      // valid
+
+      if (authemail === roleemail) {
+        // valid role
+        const dynamoUser = await getProductId(id);
+        if (dynamoUser && dynamoUser.id) {
+          return response(401, {
+            message: "Data Found",
+          });
+        }
+        async function getProductId(id) {
+          const params = {
+            TableName: productsTable,
+            Key: {
+              id: id,
+            },
+          };
+          return db
+            .get(params)
+            .promise()
+            .then((res) => {
+              if (res.Item)
+                callback(
+                  null,
+                  response(
+                    200,
+                    db
+                      .delete(params)
+                      .promise()
+                      .then(
+                        callback(
+                          null,
+                          response(200, {
+                            message: "Product Deleted successfully",
+                          })
+                        )
+                      )
                   )
-                )
-            )
-          );
-        else callback(null, response(404, { error: "Data not found" }));
-      })
-      .catch((err) => callback(null, response(err.statusCode, err)));
+                );
+              else callback(null, response(404, { error: "Data not found" }));
+            })
+            .catch((err) => callback(null, response(err.statusCode, err)));
+        }
+        // valid role
+      } else {
+        // invlaid role
+        return response(401, {
+          message: "You have dont permission to this api",
+        });
+      }
+    }
+    //
+  } else {
+    // invalid role
+    return response(401, {
+      message: "Query failed",
+    });
   }
 };
-
 // search  product
 module.exports.searchProduct = (event, context, callback) => {
   try {
@@ -412,6 +486,5 @@ async function getUser(authemail) {
     console.error("There is an error getting user: ");
     return false;
   }
-
   //
 }
