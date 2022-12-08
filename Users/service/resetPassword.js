@@ -49,6 +49,7 @@ async function updateUser(email, password) {
       email: email,
     },
     UpdateExpression: `set password = :p`,
+    ConditionExpression: "attribute_exists (id)",
     ExpressionAttributeValues: {
       ":p": encryptedPW,
     },

@@ -173,7 +173,7 @@ module.exports.deleteTag = (event, context, callback) => {
                 )
             )
           );
-        else callback(null, response(404, { error: "Data not found" }));
+        else callback(null, response(404, { message: "Data not found" }));
       })
       .catch((err) => callback(null, response(err.statusCode, err)));
   }
@@ -213,6 +213,7 @@ async function modify(id, tag_name) {
       id: id,
     },
     UpdateExpression: `set tag_name = :t`,
+    ConditionExpression: "attribute_exists (id)",
     ExpressionAttributeValues: {
       ":t": tag_name,
     },

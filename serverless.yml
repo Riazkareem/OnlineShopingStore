@@ -27,10 +27,10 @@ custom:
     CATEGORIES_TABLE: OnlineStoreCategories
     TAGS_TABLE: OnlineStoreTags
     ORDER_TABLE: OnlineStoreOrder
-    IMAGES_BUCKET: onlinestoreimages
     ONLINESTORE_CSV: onlinestorecsv
     JWT_SECRET: OnlineStoreUser
     SECURE_APIKEY: apikey1
+    TOKEN: token
 
 provider:
   name: aws
@@ -60,13 +60,14 @@ provider:
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.CATEGORIES_TABLE}"
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.TAGS_TABLE}"
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.ORDER_TABLE}"
-        - "arn:aws:s3:::${self:custom.settings.IMAGES_BUCKET}/*"
         - "arn:aws:s3:::${self:custom.settings.ONLINESTORE_CSV}/*"
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.JWT_SECRET}"
         - "*"
 
 functions:
   # User Registration Start
+  authoriserAnyToken:
+    handler: authorizers/anyToken.handler
   Home:
     handler: Users/index.handler
     events:
@@ -140,25 +141,21 @@ functions:
       - http:
           path: /deleteuser/{email}
           method: delete
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   # csv to dynamodb and upload csv to s3 bucket
-  s3FileUploader:
-    handler: Products/products.uploadfile
-    events:
-      - http:
-          path: file
-          method: POST
-  csvUploader:
-    handler: Products/uploadcsv.uploadcsv
-    events:
-      - http:
-          path: uploadcsv
-          method: POST
   csvToDynamodb:
     handler: Products/csvtodynamodb.csvtodynamodb
     events:
       - http:
           path: csvtodynamodb
           method: POST
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   # CSV Buckets
   uploadCSV:
     handler: Buckets/uploadcsv.uploadcsv
@@ -166,6 +163,10 @@ functions:
       - http:
           path: uploadcsv
           method: POST
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   listcsv:
     handler: Buckets/listcsv.listcsv
     events:
@@ -178,6 +179,10 @@ functions:
       - http:
           path: deletecsv/{filename}
           method: DELETE
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   searchcsv:
     handler: Buckets/searchcsv.searchcsv
     events:
@@ -235,6 +240,10 @@ functions:
       - http:
           path: /addCategories
           method: POST
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   allCategories:
     handler: Categories/categories.allCategories
     events:
@@ -259,12 +268,20 @@ functions:
       - http:
           path: /updatecategories
           method: put
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   deleteCategories:
     handler: Categories/categories.deleteCategories
     events:
       - http:
           path: /deletecategory/{id}
           method: delete
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
     # Tags
   addTags:
     handler: Tags/tags.addTags
@@ -272,6 +289,10 @@ functions:
       - http:
           path: /addTags
           method: POST
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   allTags:
     handler: Tags/tags.allTags
     events:
@@ -296,12 +317,20 @@ functions:
       - http:
           path: /updatetags
           method: put
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
   deleteTag:
     handler: Tags/tags.deleteTag
     events:
       - http:
           path: /deletetag/{id}
           method: delete
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
     # Order
   addOrder:
     handler: Order/order.addOrder
@@ -339,6 +368,10 @@ functions:
       - http:
           path: /deleteorder/{id}
           method: delete
+          authorizer:
+            name: authoriserAnyToken
+            type: request
+            identitySource: method.request.header.${self:custom.settings.TOKEN}
     # Payment Method Api
   paymentMethod:
     handler: paymentMethod/index.handler
@@ -349,11 +382,6 @@ functions:
 
 resources:
   Resources:
-    # onlinestore bucket
-    OnlineStoreImages:
-      Type: AWS::S3::Bucket
-      Properties:
-        BucketName: ${self:custom.settings.IMAGES_BUCKET}
     # CSV bucket
     OnlineStoreCSV:
       Type: AWS::S3::Bucket

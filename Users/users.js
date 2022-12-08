@@ -86,6 +86,7 @@ async function modifyProduct(email, username, password) {
       email: email,
     },
     UpdateExpression: `set username = :u, password = :p`,
+    ConditionExpression: "attribute_exists (email)",
     ExpressionAttributeValues: {
       ":u": username,
       ":p": encryptedPW,
@@ -121,20 +122,62 @@ function buildResponse(statusCode, body) {
   };
 }
 
+// // Delete a user
+// module.exports.deleteUser = (event, context, callback) => {
+//   const email = event.pathParameters.email;
+//   const params = {
+//     Key: {
+//       email: email,
+//     },
+//     TableName: userTable,
+//   };
+//   return db
+//     .delete(params)
+//     .promise()
+//     .then(() =>
+//       callback(null, response(200, { message: "User deleted successfully" }))
+//     )
+//     .catch((err) => callback(null, response(err.statusCode, err)));
+// };
+
 // Delete a user
 module.exports.deleteUser = (event, context, callback) => {
   const email = event.pathParameters.email;
-  const params = {
-    Key: {
-      email: email,
-    },
-    TableName: userTable,
-  };
-  return db
-    .delete(params)
-    .promise()
-    .then(() =>
-      callback(null, response(200, { message: "User deleted successfully" }))
-    )
-    .catch((err) => callback(null, response(err.statusCode, err)));
+  const dynamoUser = getUser(email);
+  if (dynamoUser && dynamoUser.email) {
+    return response(401, {
+      message: "User Not Found",
+    });
+  }
+  async function getUser(email) {
+    const params = {
+      TableName: userTable,
+      Key: {
+        email: email,
+      },
+    };
+    return db
+      .get(params)
+      .promise()
+      .then((res) => {
+        if (res.Item)
+          callback(
+            null,
+            response(
+              200,
+              db
+                .delete(params)
+                .promise()
+                .then(
+                  callback(
+                    null,
+                    response(200, { message: "User Deleted successfully" })
+                  )
+                )
+            )
+          );
+        else callback(null, response(404, { error: "User not found" }));
+      })
+      .catch((err) => callback(null, response(err.statusCode, err)));
+  }
 };

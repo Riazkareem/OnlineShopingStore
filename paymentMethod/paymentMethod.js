@@ -32,7 +32,6 @@ async function paymentMethod(paymentMethod) {
     description,
     productid,
     quantity,
-    total_price,
     address,
     payment_status,
     order_status,

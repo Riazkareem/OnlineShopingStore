@@ -299,6 +299,7 @@ async function modify(
       id: id,
     },
     UpdateExpression: `set userid = :ui, productid = :pi, image=:i,quantity=:q,total_price=:tp,address=:a,payment_status=:ps,order_status=:os`,
+    ConditionExpression: "attribute_exists (id)",
     ExpressionAttributeValues: {
       ":ui": userid,
       ":pi": productid,

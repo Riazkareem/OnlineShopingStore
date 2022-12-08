@@ -220,6 +220,7 @@ async function modify(id, category_name) {
       id: id,
     },
     UpdateExpression: `set category_name = :c`,
+    ConditionExpression: "attribute_exists (id)",
     ExpressionAttributeValues: {
       ":c": category_name,
     },
